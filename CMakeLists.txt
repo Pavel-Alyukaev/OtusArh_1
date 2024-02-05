@@ -3,4 +3,15 @@ project(Arh_1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Arh_1 main.cpp)
+
+SET(BIN_DIR "${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}")
+
+add_subdirectory("${CMAKE_SOURCE_DIR}/googletest"
+        "googletest")
+add_subdirectory("Test")
+add_subdirectory("Main")
+add_subdirectory("Lib")
+
+enable_testing()
+
+add_test(test ${CMAKE_SOURCE_DIR}/Test)

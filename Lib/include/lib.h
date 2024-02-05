@@ -11,8 +11,7 @@
 class lib
         {
 public:
-    template<typename Ta,typename Tb,typename Tc>
-    std::vector<double> Solve(Ta a, Tb b, Tc c);
+    std::vector<double> Solve(double a, double b, double c);
 };
 
 

@@ -5,12 +5,12 @@
 #include "lib.h"
 #include <vector>
 #include <stdexcept>
+#include "lib.h"
 
-template<typename Ta,typename Tb,typename Tc>
-std::vector<double> Solve(Ta a, Tb b, Tc c){
+std::vector<double> lib::Solve(double a, double b, double c){
 
     if(std::abs(a) < std::numeric_limits<double>::epsilon())
-        std::runtime_error("It is not a");
+        throw  std::runtime_error("It is not a");
 
     std::vector<double > result;
 

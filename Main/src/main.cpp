@@ -1,6 +1,9 @@
 #include <iostream>
+#include "lib.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    lib L;
+    L.Solve(1,0,0);
     return 0;
 }

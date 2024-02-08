@@ -5,7 +5,7 @@
 #include "lib.h"
 #include <algorithm>
 
-/*TEST(lib, Solve1)
+TEST(lib, Solve1)
 {
     lib L;
     auto r = L.Solve(1,0,1);
@@ -32,4 +32,4 @@ TEST(lib, Solve4)
 {
     lib L;
     ASSERT_THROW(L.Solve(0,2,1),std::runtime_error);
-}*/
+}

@@ -12,6 +12,8 @@ add_subdirectory("Test")
 add_subdirectory("Main")
 add_subdirectory("Lib")
 
-enable_testing()
 
+include(CPack)
+
+enable_testing()
 add_test(Test ${CMAKE_SOURCE_DIR}/Test)

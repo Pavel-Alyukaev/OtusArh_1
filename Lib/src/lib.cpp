@@ -5,6 +5,7 @@
 #include "lib.h"
 #include <vector>
 #include <stdexcept>
+#include <limits>
 #include "lib.h"
 
 std::vector<double> lib::Solve(double a, double b, double c){

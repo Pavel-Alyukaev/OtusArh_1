@@ -14,4 +14,4 @@ add_subdirectory("Lib")
 
 enable_testing()
 
-add_test(test ${CMAKE_SOURCE_DIR}/Test)
+add_test(Test ${CMAKE_SOURCE_DIR}/Test)

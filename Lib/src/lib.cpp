@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdexcept>
 #include <limits>
+#include <cmath>
 #include "lib.h"
 
 std::vector<double> lib::Solve(double a, double b, double c){
@@ -18,8 +19,8 @@ std::vector<double> lib::Solve(double a, double b, double c){
     double D = b*b - 4 * a * c;
 
     if(D > 0) {
-        result.emplace_back((-b + sqrt(D))/(2*a));
-        result.emplace_back((-b - sqrt(D))/(2*a));
+        result.emplace_back((-b + std::sqrt(D))/(2*a));
+        result.emplace_back((-b - std::sqrt(D))/(2*a));
     }
     else if (std::abs(D) < std::numeric_limits<double>::epsilon())
     {
